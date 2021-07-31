@@ -23,8 +23,8 @@
         <script>
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const target = urlParams.get('target') || "https://zliao.app";
-            const title = (urlParams.get('title') || "") + "知了，消息聚合"
+            const target = urlParams.get('target') || "https://mp.zliao.app";
+            const title = (urlParams.get('title') || "") + " - 知了，消息聚合"
             const myIframe = document.getElementById('myIframe');
             myIframe.src = decodeURIComponent(target);
             document.title = title;
